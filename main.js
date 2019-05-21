@@ -14,6 +14,7 @@ const app = new Vue ({
         variantId: 2235,
         variantColor: 'blue'
       }
-    ]
+    ],
+    cart: 0
   }
 });
