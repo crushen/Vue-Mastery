@@ -24,7 +24,7 @@
          <div v-for="variant in variants" v-bind:key="variant.variantId">
            <p>{{ variant.variantColor }}</p>
          </div>
-         <button>Add to cart</button>
+         <button v-on:click="addToCart">Add to cart</button>
          <div class="cart">
            <p>Cart: {{ cart }}</p>
          </div>
