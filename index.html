@@ -21,11 +21,11 @@
          <ul>
            <li v-for="detail in details">{{ detail }}</li>
          </ul>
-         <div v-for="variant in variants" 
+         <div v-for="(variant, index) in variants" 
               v-bind:key="variant.variantId"
               class="color-box"
               v-bind:style="{backgroundColor: variant.variantColor}"
-              v-on:mouseover="updateProduct(variant.variantImage)">
+              v-on:mouseover="updateProduct(index)">
          </div>
          <button v-on:click="addToCart" 
                  v-bind:disabled="!inStock"
